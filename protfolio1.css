@@ -1,0 +1,150 @@
+/* portfolio.css */
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: antiquewhite;
+}
+header{
+  background-color: rgb(212, 223, 223);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+#Home {
+  background: #f8f9fa;
+}
+
+#skills {
+  background: #e9ecef;
+}
+
+#project {
+  background: #f8f9fa;
+}
+
+#internship {
+  background: #e9ecef;
+}
+
+#contact {
+  background: #f8f9fa;
+}
+
+/* Skill Cards */
+.skill-card {
+  margin-bottom: 30px;
+}
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  margin-bottom: 30px;
+}
+
+.testimonial-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+}
+
+internship-section .card {
+  transition: transform 0.3s;
+}
+
+.internship-section .card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-download {
+  margin-top: 15px;
+}
+
+/* Contact Form */
+.form-title {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background: #9f9faa;
+  color: #353131;
+}
+
+footer a {
+  color: #292828;
+  text-decoration: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .testimonial-text,
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-text,
+  .card-text {
+    font-size: 0.75rem;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+}
