@@ -212,27 +212,29 @@
         </div>
       </div>
     </section>
+   
     <section id="Contact">
       <div class="container form-container">
         <h2 class="form-title text-center">Contact Form</h2>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="4cc9ce67-76bd-452d-b651-bed1bf6b2ff1">
           <div class="form-group">
             <label for="contactNumber">Contact Number</label>
-            <input type="text" class="form-control" id="contactNumber" placeholder="Enter your contact number">
+            <input type="text" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter your contact number">
           </div>
           <div class="form-group">
             <label for="contactEmail">Email address</label>
-            <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+            <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Enter your email">
           </div>
           <div class="form-group">
-            <label for="contactAddress">Message</label>
-            <textarea class="form-control" id="Message" rows="3" placeholder="Enter your message here"></textarea>
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter your message here"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>  
       </div>
     </section>
-  </main>
+    </main>
   <footer class="bg-light text-center text-lg-start">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       <p>
