@@ -24,10 +24,9 @@ export default function Contact() {
     setStatus("");
 
     try {
-      const res = await axios.post(
-        https://sima.loveslife.biz/backend/contact.php",
-        form
-      );
+      const apiUrl = import.meta.env.VITE_API_URL || "/backend/contact.php";
+
+      const res = await axios.post(apiUrl, form);
 
       setStatus(res.data.message);
 
