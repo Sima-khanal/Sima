@@ -25,7 +25,7 @@ export default function Contact() {
 
     try {
       const res = await axios.post(
-        "http://localhost/sima/backend/contact.php",
+        https://sima.loveslife.biz/backend/contact.php",
         form
       );
 
