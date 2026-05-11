@@ -1,9 +1,9 @@
 [build]
   base = "frontend"
   command = "npm run build"
-  publish = "frontend/dist"
+  publish = "dist"
 
-# Handle React Router / SPA routing (prevents 404 on page refresh)
+# SPA routing for React Router (prevents page refresh 404s)
 [[redirects]]
   from = "/*"
   to = "/index.html"
